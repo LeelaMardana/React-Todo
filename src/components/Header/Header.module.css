@@ -50,3 +50,18 @@
 .button:hover {
   background-color: #8284fa;
 }
+
+@media (max-width: 450px) {
+  .form {
+    flex-direction: column;
+    bottom: -68px;
+    height: auto;
+  }
+  .form input {
+    padding: 14px 16px;
+  }
+  .button {
+    height: 50px;
+    align-self: center;
+  }
+}
