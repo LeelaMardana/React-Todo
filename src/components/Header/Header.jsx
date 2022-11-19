@@ -10,6 +10,11 @@ export function Header({ onAddTask }) {
   //4 При нажатии на кнопку, State значение уходит в App
   function handleSubmit(e) {
     e.preventDefault();
+
+    //чек на пустую строку
+    if (!title) return;
+
+    console.log(title);
     onAddTask(title);
     // очищаем инпут
     setTitle('');
