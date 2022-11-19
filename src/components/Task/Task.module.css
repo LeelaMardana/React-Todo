@@ -5,7 +5,7 @@
   padding: 16px;
   border-radius: 8px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
 }
@@ -15,6 +15,7 @@
   line-height: 19px;
   color: #f2f2f2;
   margin-right: auto;
+  overflow-wrap: anywhere;
 }
 
 p.textCompleted {
@@ -27,6 +28,7 @@ p.textCompleted {
   height: 20px;
   background: none;
   border: none;
+  flex-shrink: 0;
 }
 
 .checkContainer div {
